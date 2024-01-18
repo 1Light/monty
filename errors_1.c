@@ -7,7 +7,7 @@ int unknown_op_error(char *opcode, unsigned int line_number);
 int no_int_error(unsigned int line_number);
 
 /**
- * usage_error - Prints usage error messages.
+ * usage_error - Returns a usage error message.
  *
  * Return: (EXIT_FAILURE) always.
  */
