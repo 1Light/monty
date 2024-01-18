@@ -13,13 +13,13 @@
 extern char **op_toks;
 
 /**
- * struct stack_s - doubly linked list representation of a stack (or queue)
- * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
+ * struct stack_s - doubly linked list expression of a piles
+ * @n: int value
+ * @prev: pointer to the preceding element of the pile
+ * @next: pointer to the proceeding  element of the pile
  *
- * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO Holberton project
+ * Description: doubly linked list element layout
+ *              for stack, queues, LIFO and FIFO Holberton project
  */
 typedef struct stack_s
 {
@@ -29,12 +29,12 @@ typedef struct stack_s
 } stack_t;
 
 /**
- * struct instruction_s - opcode and its function
- * @opcode: the opcode
- * @f: function to handle the opcode
+ * struct instruction_s - opcode with its own function
+ * @opcode: operation code
+ * @f: function that holds opcode
  *
- * Description: opcode and its function
- * for stack, queues, LIFO, FIFO Holberton project
+ * Description: opcode with its own function
+ *              for stack, queues, LIFO and FIFO Holberton project
  */
 typedef struct instruction_s
 {
@@ -42,7 +42,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-/* PRIMARY INTERPRETER FUNCTIONS */
+/* MAIN INTERPRETER FUNCTIONS */
 void free_stack(stack_t **stack);
 int init_stack(stack_t **stack);
 int check_mode(stack_t *stack);
@@ -70,11 +70,11 @@ void monty_rotr(stack_t **stack, unsigned int line_number);
 void monty_stack(stack_t **stack, unsigned int line_number);
 void monty_queue(stack_t **stack, unsigned int line_number);
 
-/* CUSTOM STANDARD LIBRARY FUNCTIONS */
+/*UNIQUE STANDARD LIBRARY FUNCTIONS */
 char **strtow(char *str, char *delims);
 char *get_int(int n);
 
-/* ERROR MESSAGES & ERROR CODES */
+/* ERROR MESSAGES AND ERROR CODES */
 int usage_error(void);
 int malloc_error(void);
 int f_open_error(char *filename);

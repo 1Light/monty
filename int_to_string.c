@@ -7,10 +7,11 @@ void fill_numbase_buff(unsigned int num, unsigned int base,
 		       char *buff, int buff_size);
 
 /**
- * get_int - gets a character pointer to new string containing int
- * @num: number to convert to string
+ * get_int - obtains a char pointer for new string holding int
+ * @num: A number to change to string
  *
- * Return: character pointer to newly created string. NULL if malloc fails.
+ * Return: char pointer to freshly initialized string.
+ *         returns NULL when malloc fails.
  */
 char *get_int(int num)
 {
@@ -36,10 +37,10 @@ char *get_int(int num)
 }
 
 /**
- * _abs - gets the absolute value of an integer
- * @i: integer to get absolute value of
+ * _abs - obtains absolute value of int
+ * @i: int to find absolute value for
  *
- * Return: unsigned integer abs rep of i
+ * Return: unsigned int abs rep for the int i
  */
 unsigned int _abs(int i)
 {
@@ -49,11 +50,11 @@ unsigned int _abs(int i)
 }
 
 /**
- * get_numbase_len - gets length of buffer needed for an unsigned int
- * @num: number to get length needed for
+ * get_numbase_len - obtains size of buffer required for the unsigned int
+ * @num: number to obtain size of
  * @base: base of number representation used by buffer
  *
- * Return: integer containing length of buffer needed (doesn't contain null bt)
+ * Return: int holding size of buffer required
  */
 int get_numbase_len(unsigned int num, unsigned int base)
 {
@@ -68,13 +69,13 @@ int get_numbase_len(unsigned int num, unsigned int base)
 }
 
 /**
- * fill_numbase_buff - fills buffer with correct numbers up to base 36
- * @num: number to convert to string given base
- * @base: base of number used in conversion, only works up to base 36
- * @buff: buffer to fill with result of conversion
- * @buff_size: size of buffer in bytes
+ * fill_numbase_buff - loads buffer with the right numbers until base 36
+ * @num: number to change to string with provided base
+ * @base: base for the number being converted, only functions until base 36
+ * @buff: buffer that wll be loaded with return value after conversion
+ * @buff_size: capacity of buffer (in bytes)
  *
- * Return: always void.
+ * Return: void everytime.
  */
 void fill_numbase_buff(unsigned int num, unsigned int base,
 			char *buff, int buff_size)

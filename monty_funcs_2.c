@@ -7,12 +7,13 @@ void monty_mul(stack_t **stack, unsigned int line_number);
 void monty_mod(stack_t **stack, unsigned int line_number);
 
 /**
- * monty_add - Adds the top two values of a stack_t linked list.
- * @stack: A pointer to the top mode node of a stack_t linked list.
- * @line_number: The current working line number of a Monty bytecodes file.
+ * monty_add - Adds together first two items of the stack_t linked list.
+ * @stack: Points toawrds the top node of a given stack_t linked list.
+ * @line_number: The line number presently being worked on
+ *               from the Monty bytecodes file.
  *
- * Description: The result is stored in the second value node
- *              from the top and the top value  is removed.
+ * Description: The returned value is kept in the second item node
+ *              from the top then top item is deleted.
  */
 void monty_add(stack_t **stack, unsigned int line_number)
 {
@@ -27,13 +28,14 @@ void monty_add(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * monty_sub - Subtracts the second value from the top of
- *             a stack_t linked list by the top value.
- * @stack: A pointer to the top mode node of a stack_t linked list.
- * @line_number: The current working line number of a Monty bytecodes file.
+ * monty_sub - Subtracts the second item by the top item
+ *             of the stack_t linked list.
+ * @stack: Points toawrds the top node of a given stack_t linked list.
+ * @line_number: The line number presently being worked on
+ *               from the Monty bytecodes file.
  *
- * Description: The result is stored in the second value node
- *              from the top and the top value is removed.
+ * Description: The returned value is kept in the second item node
+ *              from the top then top item is deleted.
  */
 void monty_sub(stack_t **stack, unsigned int line_number)
 {
@@ -48,13 +50,14 @@ void monty_sub(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * monty_div - Divides the second value from the top of
- *             a stack_t linked list by the top value.
- * @stack: A pointer to the top mode node of a stack_t linked list.
- * @line_number: The current working line number of a Monty bytecodes file.
+ * monty_div - Divides the second item by the top item
+ *             of the stack_t linked list.
+ * @stack: Points toawrds the top node of a given stack_t linked list.
+ * @line_number: The line number presently being worked on
+ *               from the Monty bytecodes file.
  *
- * Description: The result is stored in the second value node
- *              from the top and the top value is removed.
+ * Description: The returned value is kept in the second item node
+ *              from the top then top item is deleted.
  */
 void monty_div(stack_t **stack, unsigned int line_number)
 {
@@ -75,13 +78,13 @@ void monty_div(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * monty_mul - Multiplies the second value from the top of
- *             a stack_t linked list by the top value.
- * @stack: A pointer to the top mode node of a stack_t linked list.
- * @line_number: The current working line number of a Monty bytecodes file.
+ * monty_mul - Multiplies first two items of the stack_t linked list.
+ * @stack: Points toawrds the top node of a given stack_t linked list.
+ * @line_number: The line number presently being worked on
+ *               from the Monty bytecodes file.
  *
- * Description: The result is stored in the second value node
- *              from the top and the top value is removed.
+ * Description: The returned value is kept in the second item node
+ *              from the top then top item is deleted.
  */
 void monty_mul(stack_t **stack, unsigned int line_number)
 {
@@ -96,13 +99,14 @@ void monty_mul(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * monty_mod - Computes the modulus of the second value from the
- *             top of a stack_t linked list  by the top value.
- * @stack: A pointer to the top mode node of a stack_t linked list.
- * @line_number: The current working line number of a Monty bytecodes file.
+ * monty_mod - works out modulus of the second item by the top item
+ *             of the stack_t linked list.
+ * @stack: Points toawrds the top node of a given stack_t linked list.
+ * @line_number: The line number presently being worked on
+ *               from the Monty bytecodes file.
  *
- * Description: The result is stored in the second value node
- *              from the top and the top value is removed.
+ * Description: The returned value is kept in the second item node
+ *              from the top then top item is deleted.
  */
 void monty_mod(stack_t **stack, unsigned int line_number)
 {
