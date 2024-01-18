@@ -7,9 +7,9 @@ int unknown_op_error(char *opcode, unsigned int line_number);
 int no_int_error(unsigned int line_number);
 
 /**
- * usage_error - Returns a usage error message.
+ * usage_error - Outputs a usage error message.
  *
- * Return: (EXIT_FAILURE) always.
+ * Return: Error Exit everytime.
  */
 int usage_error(void)
 {
@@ -18,9 +18,9 @@ int usage_error(void)
 }
 
 /**
- * malloc_error - Prints malloc error messages.
+ * malloc_error - Outputs a malloc error message.
  *
- * Return: (EXIT_FAILURE) always.
+ * Return: Error Exit everytime.
  */
 int malloc_error(void)
 {
@@ -29,10 +29,10 @@ int malloc_error(void)
 }
 
 /**
- * f_open_error - Prints file opening error messages w/ file name.
- * @filename: Name of file failed to open
+ * f_open_error - Outputs file launching error message without file name.
+ * @filename: File name failed to launch.
  *
- * Return: (EXIT_FAILURE) always.
+ * Return: Error Exit everytime.
  */
 int f_open_error(char *filename)
 {
@@ -41,11 +41,11 @@ int f_open_error(char *filename)
 }
 
 /**
- * unknown_op_error - Prints unknown instruction error messages.
- * @opcode: Opcode where error occurred.
- * @line_number: Line number in Monty bytecodes file where error occured.
+ * unknown_op_error - outputs unspecified command error messages.
+ * @opcode: Opcode when error happens.
+ * @line_number: Show line number in Monty bytecodes file where error happened.
  *
- * Return: (EXIT_FAILURE) always.
+ * Return: Error Exit everytime.
  */
 int unknown_op_error(char *opcode, unsigned int line_number)
 {
@@ -55,10 +55,10 @@ int unknown_op_error(char *opcode, unsigned int line_number)
 }
 
 /**
- * no_int_error - Prints invalid monty_push argument error messages.
- * @line_number: Line number in Monty bytecodes file where error occurred.
+ * no_int_error - Outputs unsupported monty_push input error messages.
+ * @line_number: Show line number in Monty bytecodes file where error happened.
  *
- * Return: (EXIT_FAILURE) always.
+ * Return: Error Exit everytime.
  */
 int no_int_error(unsigned int line_number)
 {
